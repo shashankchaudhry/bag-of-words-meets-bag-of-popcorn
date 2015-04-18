@@ -30,7 +30,7 @@ if __name__ == '__main__':
 
 
     print 'Download text data sets. If you already have NLTK datasets downloaded, just close the Python download window...'
-    nltk.download()  # Download text data sets, including stop words
+    #nltk.download()  # Download text data sets, including stop words
 
     # Initialize an empty list to hold the clean reviews
     clean_train_reviews = []
