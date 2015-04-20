@@ -95,7 +95,8 @@ if __name__ == '__main__':
 
     # Use the random forest to make sentiment label predictions
     print "Predicting test labels...\n"
-    result = forest.predict(test_data_features)
+    result = forest.predict_proba(test_data_features)
+    result = result[:,1]
 
     # Copy the results to a pandas dataframe with an "id" column and
     # a "sentiment" column
